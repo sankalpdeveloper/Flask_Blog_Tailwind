@@ -1,0 +1,9 @@
+{
+    "params":{
+            "blog-name":"Sankalpdev",
+            "hero-main-1":"A Crazy Blog About",
+            "hero-main-2":"Coumputer Science",
+            "hero-tagline":"A blog for developers by developers",
+            "no_of_posts":6
+    }
+}
