@@ -1,1 +1,1 @@
-web: sankalp_dev.py
+web: gunicorn app:app

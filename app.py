@@ -10,8 +10,9 @@ with open('config-home.json','r') as c:
 
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/sankalpdev'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ncptlvsbnmsayn:feec54438d9922b8978d1ad2841c613e4feea87af47391961e8bdf62d0b70106@ec2-34-197-141-7.compute-1.amazonaws.com:5432/de7hko4ftobp03'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/sankalpdev'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ncptlvsbnmsayn:feec54438d9922b8978d1ad2841c613e4feea87af47391961e8bdf62d0b70106@ec2-34-197-141-7.compute-1.amazonaws.com:5432/de7hko4ftobp03'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
